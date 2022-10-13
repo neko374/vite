@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <Header></Header>
     <div class="down">
       <div class="inp">
         模型号：<el-input
@@ -137,6 +138,7 @@
 
 <script setup>
 import { ref } from "vue";
+import Header from "../../components/header/header.vue";
 var dataList = ref([
   {
     number: "1",

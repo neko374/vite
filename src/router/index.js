@@ -22,7 +22,7 @@ const routes = [
         component: () => import('../views/login.vue')
     },
     {
-        path: '/404',
+        path: '/error',
         name: '404',
         meta: {
             title: "找不到页面"
@@ -31,7 +31,7 @@ const routes = [
     },
     {
         path: '/*',
-        redirect: "/404"
+        redirect: "/error"
     },
     {
         path: '/table',
@@ -39,7 +39,23 @@ const routes = [
         meta: {
             title: "表格"
         },
-        component: () => import('../views/table.vue')
+        component: () => import('../views/table/table.vue')
+    },
+    {
+        path: '/chart',
+        name: 'Chart',
+        meta: {
+            title: "大数据图"
+        },
+        component: () => import('../views/chart/chart.vue')
+    },
+    {
+        path: '/editor',
+        name: 'Editor',
+        meta: {
+            title: "在线编辑"
+        },
+        component: () => import('../views/editor/editor.vue')
     },
 ]
 const router = createRouter({
