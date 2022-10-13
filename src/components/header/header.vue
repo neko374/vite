@@ -26,6 +26,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
+  border-bottom: .1px solid gray;
 }
 
 a {

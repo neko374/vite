@@ -23,13 +23,10 @@
       </div>
       <div style="padding: 20px 0 20px 20px">
         <span style="margin-right: 15px; cursor: pointer" @click="add">
-          <i class="el-icon-circle-plus-outline"></i> 添加
+          <el-icon color="black"><CirclePlus /></el-icon> 添加
         </span>
-        <span style="margin-right: 15px; cursor: pointer"
-          ><i class="el-icon-edit-outline"></i> 编辑</span
-        >
         <span style="margin-right: 15px; cursor: pointer" @click="del"
-          ><i class="el-icon-devare"></i> 删除</span
+          ><el-icon color="black"><Delete /></el-icon> 删除</span
         >
       </div>
       <el-table
@@ -201,19 +198,5 @@ var add = () => {
   height: 100%;
   padding: 20px;
   float: right;
-}
-
-::v-deep .el-dialog__header {
-  background-color: #3370ff;
-  padding: 15px;
-  border-radius: 0;
-}
-
-::v-deep .el-dialog__title {
-  color: white;
-}
-
-::v-deep .el-dialog__headerbtn .el-dialog__close {
-  color: white;
 }
 </style>

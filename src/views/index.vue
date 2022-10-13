@@ -1,7 +1,11 @@
 <template>
   <div>
     <Header></Header>
-    <swiper :modules="modules" :pagination="{ clickable: true }">
+    <swiper
+      :modules="modules"
+      :pagination="{ clickable: true }"
+      :autoplay="true"
+    >
       <swiper-slide><img src="../assets/index/banner_03.jpg" /></swiper-slide>
       <swiper-slide><img src="../assets/index/banner_02.png" /></swiper-slide>
       <swiper-slide><img src="../assets/index/banner_04.jpg" /></swiper-slide>
