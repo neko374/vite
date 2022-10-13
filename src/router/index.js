@@ -33,6 +33,14 @@ const routes = [
         path: '/*',
         redirect: "/404"
     },
+    {
+        path: '/table',
+        name: 'Table',
+        meta: {
+            title: "表格"
+        },
+        component: () => import('../views/table.vue')
+    },
 ]
 const router = createRouter({
     routes,

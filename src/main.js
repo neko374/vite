@@ -3,6 +3,7 @@ import App from './App.vue'
 import ElementPlus from 'element-plus'
 import router from './router'
 import axios from "./plugins/axios"
+import 'element-plus/dist/index.css'
 var app = createApp(App)
 app.use(router)
 app.config.globalProperties.$axios = axios;

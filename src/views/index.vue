@@ -1,6 +1,7 @@
 <template>
   <div>
     <div id="chart1"></div>
+    <router-link to="/table">表</router-link>
   </div>
 </template>
 
