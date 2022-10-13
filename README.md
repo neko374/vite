@@ -1,2 +1,3 @@
-# vite
- 自建
+## 安装启动
+sudo cnpm i
+sudo npm run dev
