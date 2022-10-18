@@ -1,26 +1,33 @@
 <template>
   <div>
     <Header></Header>
-    <span style="font-size: 20px; margin-left: 2vw; vertical-align: middle"
-      >在线代码编辑器</span
-    >
-    <span style="font-size: 20px; margin-left: 70%; vertical-align: middle"
-      >选择语言：</span
-    >
-    <el-select
-      style="display: inline-block; vertical-align: middle"
-      v-model="language"
-      placeholder="选择语言"
-      @change="handleLanguage"
-    >
-      <el-option
-        v-for="(languageItem, key) in languageOptions"
-        :key="key"
-        :label="languageItem"
-        :value="languageItem"
+    <div style="padding: 10px 0 10px 0">
+      <span style="font-size: 20px; margin-left: 2vw; vertical-align: middle"
+        >在线代码编辑器</span
       >
-      </el-option>
-    </el-select>
+      <el-select
+        style="
+          display: inline-block;
+          vertical-align: middle;
+          float: right;
+          margin-right: 1vw;
+        "
+        v-model="language"
+        placeholder="选择语言"
+        @change="handleLanguage"
+      >
+        <el-option
+          v-for="(languageItem, key) in languageOptions"
+          :key="key"
+          :label="languageItem"
+          :value="languageItem"
+        >
+        </el-option>
+      </el-select>
+      <span style="font-size: 20px; float: right; vertical-align: middle"
+        >选择语言：</span
+      >
+    </div>
     <div id="monaco"></div>
   </div>
 </template>
